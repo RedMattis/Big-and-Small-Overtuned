@@ -1,0 +1,13 @@
+<Patch>
+  <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BS_GiantMusketShot"]/projectile/damageAmountBase</xpath>
+		<value> <damageAmountBase>60</damageAmountBase> </value>
+	</Operation>
+
+  <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BS_GiantMusketShot"]/projectile/stoppingPower</xpath>
+		<value> <stoppingPower>5</stoppingPower> </value>
+	</Operation>
+
+
+</Patch>

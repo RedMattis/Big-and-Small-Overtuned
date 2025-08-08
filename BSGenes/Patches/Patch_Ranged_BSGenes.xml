@@ -1,0 +1,93 @@
+<Patch>
+  <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BS_JotunRifle"]/description</xpath>
+		<value>
+      <description>A heavy rifle designed to be wielded by a combat mech for use against other mechs other other heavy military hardware.\n\nThe weapon is too large to be wielded by a regular human, even if they could somehow manage the terrible recoil.\n\nCan be wielded by giant, herculean, or warcasket pawns.\n\nThe projectiles have a moderate chance of exploding when penetrating armour and rarely cause EMP surges on some targets.</description>
+    </value>
+	</Operation>
+
+  <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BS_Bullet_JotunRifle"]/projectile/damageAmountBase</xpath>
+		<value> <damageAmountBase>55</damageAmountBase> </value>
+	</Operation>
+
+  <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BS_Bullet_JotunRifle"]/projectile/armorPenetrationBase</xpath>
+		<value> <armorPenetrationBase>2</armorPenetrationBase> </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="BS_Bullet_JotunRifle"]/projectile</xpath>
+		<value>
+      <extraDamages>
+        <li>
+          <def>Bomb</def>
+          <amount>50</amount>
+          <chance>0.5</chance>
+        </li>
+        <li>
+          <def>EMP</def>
+          <amount>12</amount>
+          <chance>0.25</chance>
+        </li>
+      </extraDamages>
+    </value>
+	</Operation>
+  
+  <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BS_GiantMinigun"]/verbs/li/burstShotCount</xpath>
+		<value> <burstShotCount>11</burstShotCount> </value>
+	</Operation>
+
+  <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BS_GiantMinigun"]/verbs/li/warmupTime</xpath>
+		<value> <warmupTime>0.08678</warmupTime> </value>
+	</Operation>
+  <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BS_GiantMinigun"]/statBases/RangedWeapon_Cooldown</xpath>
+		<value> <RangedWeapon_Cooldown>0.08678</RangedWeapon_Cooldown> </value>
+	</Operation>
+
+  <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BS_GiantMinigun"]/verbs/li/ticksBetweenBurstShots</xpath>
+		<value> <ticksBetweenBurstShots>11</ticksBetweenBurstShots> </value>
+	</Operation>
+
+  <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BS_GiantMinigunBullet"]/projectile/armorPenetrationBase</xpath>
+		<value> <armorPenetrationBase>1</armorPenetrationBase> </value>
+	</Operation>
+
+  <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BS_Rocket"]/projectile/explosionRadius</xpath>
+		<value> <explosionRadius>2.9</explosionRadius> </value>
+	</Operation>
+
+  <Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="BS_Rocket"]/projectile</xpath>
+		<value> <damageAmountBase>75</damageAmountBase> </value>
+	</Operation>
+
+  <Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="BS_Rocket"]/projectile</xpath>
+		<value> <armorPenetrationBase>0.5</armorPenetrationBase> </value>
+	</Operation>
+
+  <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BS_JotunJavelinProjectile"]/projectile/damageAmountBase</xpath>
+		<value> <damageAmountBase>80</damageAmountBase> </value>
+	</Operation>
+
+  <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BS_GiantArrow"]/projectile/damageAmountBase</xpath>
+		<value> <damageAmountBase>42</damageAmountBase> </value>
+	</Operation>
+
+  <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BS_ChunkProjectile"]/projectile/damageAmountBase</xpath>
+		<value> <damageAmountBase>39</damageAmountBase> </value>
+	</Operation>
+
+  <!-- Melee -->
+  
+</Patch>

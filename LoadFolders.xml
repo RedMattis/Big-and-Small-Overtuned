@@ -1,0 +1,8 @@
+<loadFolders>
+  <v1.5>
+    <li>/</li>
+    <li>BSGenes</li>
+    <li IfModActive="RedMattis.BigWeapons">BSWeapons</li>
+    <li IfModActive="Ludeon.RimWorld.Odyssey">Odyssey</li>
+  </v1.5>
+</loadFolders>

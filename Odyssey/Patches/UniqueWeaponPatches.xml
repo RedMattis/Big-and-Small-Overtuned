@@ -1,0 +1,16 @@
+<Patch>
+  <Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="BS_GiantMinigun_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+		<value>
+      <li>BS_SingleShot</li>
+      <li>BS_SingleShotBullet</li>
+    </value>
+	</Operation>
+
+  <Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="BS_JotunRocketLauncher_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+		<value>
+      <li>BS_SingleShotBullet</li>
+    </value>
+	</Operation>
+</Patch>
